@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "MyProject",
+			"Path": "/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MyProjectEditor",
+			"Path": "/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

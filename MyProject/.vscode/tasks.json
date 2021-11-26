@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "MyProject Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Mac",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"IOS",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"Linux",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxAArch64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxAArch64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxAArch64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxAArch64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject LinuxAArch64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject LinuxAArch64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"LinuxAArch64",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Shipping",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProject TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProject TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProject",
+				"TVOS",
+				"Test",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Linux",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"Debug",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"DebugGame",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MyProjectEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		},
+		{
+			"label": "MyProjectEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MyProjectEditor",
+				"Mac",
+				"Development",
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+			}
+		}
+	]
+}

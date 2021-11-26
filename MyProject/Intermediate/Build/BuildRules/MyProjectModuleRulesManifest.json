@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject/MyProject.Build.cs",
+		"/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject.Target.cs",
+		"/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProjectEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.1"
+}

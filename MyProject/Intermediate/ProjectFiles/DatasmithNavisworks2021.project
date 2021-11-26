@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="DatasmithNavisworks2021">
+  <VirtualDirectory Name="y_fighting_game">
+    <VirtualDirectory Name="lib">
+      <VirtualDirectory Name="UnrealEngine">
+        <VirtualDirectory Name="Engine">
+          <VirtualDirectory Name="Source">
+            <VirtualDirectory Name="Programs">
+              <VirtualDirectory Name="Enterprise">
+                <VirtualDirectory Name="Datasmith">
+                  <VirtualDirectory Name="DatasmithNavisworksExporter">
+                    <VirtualDirectory Name="UBTModules">
+                      <File Name="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithNavisworksExporter/UBTModules/DatasmithNavisworks2021.Target.cs" />
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021-Linux-Debug" />
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Debug -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Debug -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Debug -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Debug -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021-Linux-DebugGame" />
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux DebugGame -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux DebugGame -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux DebugGame -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux DebugGame -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021" />
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Development -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Development -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Development -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Development -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021-Linux-Shipping" />
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Shipping -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Shipping -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Shipping -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Shipping -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021-Linux-Test" />
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithNavisworks2021-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Test -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Test -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Test -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithNavisworks2021 Linux Test -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

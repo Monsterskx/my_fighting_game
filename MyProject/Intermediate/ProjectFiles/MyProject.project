@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="MyProject">
+  <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" />
+  <VirtualDirectory Name="Source">
+    <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject.Target.cs" />
+    <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProjectEditor.Target.cs" />
+    <VirtualDirectory Name="MyProject">
+      <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject/MyProject.Build.cs" />
+      <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject/MyProject.cpp" />
+      <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject/MyProject.h" />
+      <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject/MyProjectCharacter.cpp" />
+      <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject/MyProjectCharacter.h" />
+      <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject/MyProjectGameMode.cpp" />
+      <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Source/MyProject/MyProjectGameMode.h" />
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Config">
+    <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Config/DefaultEditor.ini" />
+    <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Config/DefaultEditorPerProjectUserSettings.ini" />
+    <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Config/DefaultEngine.ini" />
+    <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Config/DefaultGame.ini" />
+    <File Name="/home/capitaine/Repo/my_fighting_game/MyProject/Config/DefaultInput.ini" />
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General CommandArguments=" -debug" WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject-Linux-Debug" />
+      <General CommandArguments=" -debug" WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Debug -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Debug -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Debug -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Debug -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Debug -serverconfig=Debug -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Debug -serverconfig=Debug -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Debug -serverconfig=Debug -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General CommandArguments=" -debug" WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject-Linux-DebugGame" />
+      <General CommandArguments=" -debug" WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux DebugGame -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux DebugGame -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux DebugGame -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux DebugGame -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject" />
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Development -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Development -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Development -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Development -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject-Linux-Shipping" />
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Shipping -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Shipping -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Shipping -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Shipping -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject-Linux-Test" />
+      <General WorkingDirectory="/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux" Command="./MyProject-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Test -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</BuildCommand>
+        <CleanCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Test -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Test -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -clean
+/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh MyProject Linux Test -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Test -serverconfig=Test -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Test -serverconfig=Test -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject" -noP4 -nokill -clientconfig=Test -serverconfig=Test -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

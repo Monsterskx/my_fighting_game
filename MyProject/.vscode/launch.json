@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "MyProject (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MyProject Linux Debug Build",
+			"program": "/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux/MyProject-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MyProject (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MyProject Linux DebugGame Build",
+			"program": "/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux/MyProject-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MyProject (Development)",
+			"request": "launch",
+			"preLaunchTask": "MyProject Linux Development Build",
+			"program": "/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux/MyProject",
+			"args": [
+			],
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MyProject (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "MyProject Linux Shipping Build",
+			"program": "/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux/MyProject-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MyProject (Test)",
+			"request": "launch",
+			"preLaunchTask": "MyProject Linux Test Build",
+			"program": "/home/capitaine/Repo/my_fighting_game/MyProject/Binaries/Linux/MyProject-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MyProjectEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectEditor Linux Debug Build",
+			"program": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"
+			],
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MyProjectEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectEditor Linux DebugGame Build",
+			"program": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"
+			],
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MyProjectEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectEditor Linux Development Build",
+			"program": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject"
+			],
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=/home/capitaine/Repo/my_fighting_game/MyProject/MyProject.uproject",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/capitaine/Repo/my_fighting_game/lib/UnrealEngine"
+		}
+	]
+}
